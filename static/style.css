@@ -1,0 +1,11 @@
+.box {
+    width: 870px;
+    border: 2px solid purple;
+    padding: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.vertical_align{
+    display: flex;
+}
