@@ -7,6 +7,13 @@
     border-radius: 5px;
 }
 
+.better_button {
+    size: 1cm;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid gray;
+}
+
 .vertical_align{
     display: flex;
 }
