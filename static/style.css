@@ -1,10 +1,10 @@
 .box {
-    width: 870px;
-    height: 870px;
-    border: 2px solid purple;
-    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #A9A9A9;
     margin-right: 20px;
     margin-left: 20px;
+    border-radius: 5px;
 }
 
 .vertical_align{
