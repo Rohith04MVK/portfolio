@@ -14,7 +14,7 @@ const Home = () => {
                         <br />
                         Backend engineer
                     </h1>
-                    <a href="#" className="block bg-background hover:bg-gray py-3 px-4 rounded-lg text-lg text-gray-800 font-bold uppercase mt-10 text-pink">
+                    <a href="#" className="block bg-background hover:bg-pink hover:text-background py-3 px-4 rounded-lg text-lg text-gray-800 font-bold uppercase mt-10 text-pink">
                         Discover
                     </a>
                 </div>
