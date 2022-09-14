@@ -13,8 +13,11 @@ const Contact = () => {
 
   return (
     <div>
-      <img src="https://images.hdqwalls.com/wallpapers/japan-landscape-vector-minimalist-4k-y6.jpg
-" className="absolute h-full w-full object-cover" />
+      <img
+        src="https://images.hdqwalls.com/wallpapers/japan-landscape-vector-minimalist-4k-y6.jpg
+"
+        className="absolute h-full w-full object-cover"
+      />
       <section className="text-gray body-font relative">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
@@ -22,16 +25,15 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam velit dui, varius a tellus et.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              velit dui, varius a tellus et.
             </p>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label className="leading-7 text-sm text-gray">
-                    Name
-                  </label>
+                  <label className="leading-7 text-sm text-gray">Name</label>
                   <input
                     type="text"
                     id="name"
@@ -42,11 +44,7 @@ const Contact = () => {
               </div>
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label
-                    className="leading-7 text-sm text-gray"
-                  >
-                    Email
-                  </label>
+                  <label className="leading-7 text-sm text-gray">Email</label>
                   <input
                     type="email"
                     id="email"
@@ -57,11 +55,7 @@ const Contact = () => {
               </div>
               <div className="p-2 w-full">
                 <div className="relative">
-                  <label
-                    className="leading-7 text-sm text-gray"
-                  >
-                    Message
-                  </label>
+                  <label className="leading-7 text-sm text-gray">Message</label>
                   <textarea
                     id="message"
                     name="message"

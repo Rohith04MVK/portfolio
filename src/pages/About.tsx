@@ -21,7 +21,7 @@ const About = () => {
           </p>
           <button
             className="border-background py-3 px-4 text-lg text-white font-bold uppercase mt-10"
-            onClick={() => console.log("Do something.")}
+            onClick={() => console.log('Do something.')}
           >
             Résumé
           </button>
