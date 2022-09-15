@@ -109,9 +109,9 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-gray-700 p-4">
-        © 2021 Copyright:
-        <a className="text-gray-800" href="https://tailwind-elements.com/">
-          Tailwind Elements
+        © 2022 Copyright:
+        <a className="text-gray-800" href="#">
+          Test Copyright
         </a>
       </div>
     </footer>
