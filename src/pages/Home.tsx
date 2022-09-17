@@ -1,5 +1,3 @@
-import Footer from './Footer';
-
 const Home = () => {
   return (
     <div className="bg-indigo-900 relative overflow-hidden h-screen">
@@ -26,7 +24,6 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

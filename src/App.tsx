@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Error404 from './pages/Error404';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
           <Route path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
+
+      <Footer />
     </>
   );
 };

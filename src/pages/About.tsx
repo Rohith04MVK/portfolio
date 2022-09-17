@@ -13,11 +13,14 @@ const About = () => {
             A whole page about me!
           </p>
           <p className="flex flex-col max-w-lg text-center items-center font-extrabold text-lg mt-6 text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            turpis felis, eleifend at tellus ut, imperdiet suscipit sem. Donec
-            vel elementum diam, ut aliquam dolor. Curabitur in dignissim nibh.
-            Maecenas quis mi pretium, consectetur justo ut, varius sem. Vivamus
-            rhoncus sem id quam tincidunt ullamcorper a ac tortor.
+            My name is Rohith. 18 y/o developer from India, still consider
+            myself new but always learning new things. I absolutely love to
+            write code, and discuss code, and everything around code, haha. Got
+            a knack for programming, and building those cool ML models you've
+            always dreamt of. Journey been a crazy one, went from being scared
+            by HTML to loving Machine learning in a single year, during the
+            pandemic. The people I met on the way, the friendships made, lessons
+            learned all this was a great adventure! 💙
           </p>
           <button
             className="border-background py-3 px-4 text-lg text-white font-bold uppercase mt-10"
