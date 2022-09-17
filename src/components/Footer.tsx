@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="text-center bg-white">
-      <div className="px-4 py-12 mx-auto max-w-screen-xl sm:px-4 lg:px-6">
+      <div className="px-4 py-2 mx-auto max-w-screen-xl sm:px-4 lg:px-6">
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex justify-center gap-6">
             <a
@@ -63,54 +63,6 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-
-          <nav className="p-6 border-4 border-gray-900 rounded-3xl">
-            <ul className="flex flex-wrap justify-center text-sm font-bold gap-6">
-              <li>
-                <a
-                  className="text-gray-900 transition hover:text-gray-900/75"
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Website
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-900 transition hover:text-gray-900/75"
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Uses
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-900 transition hover:text-gray-900/75"
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Blog
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-900 transition hover:text-gray-900/75"
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Portfolio
-                </a>
-              </li>
-            </ul>
-          </nav>
 
           <p className="max-w-lg mx-auto text-xs text-gray-500">
             <span className="block mt-4"> &copy; 2022 Rohith </span>

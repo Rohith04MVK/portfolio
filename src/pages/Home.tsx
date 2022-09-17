@@ -14,7 +14,7 @@ const Home = () => {
           <h1 className="font-robo font-bold text-6xl sm:text-7xl text-white leading-tight mt-4 text-left">
             Machine learning &
             <br />
-            Backend engineer
+            Backend developer
           </h1>
           <a
             href="#"
