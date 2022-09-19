@@ -18,10 +18,12 @@ module.exports = {
       'white':'#deeafa',
       'blue': '#A3CBE7',
       'light-gray': '#9C9C9C',
-      'pink':'#FBD2D1',
       'button-red':'#f56565',
       'button-green':'#68d391',
       'button-yellow':'#faf089',
+      'pink':'#FFDEDE',
+      'purple':'#CEACE8',
+      'indigo':'#A3CBE7'
     },
 
     extend: {
