@@ -17,7 +17,7 @@ const Home = () => {
             Backend developer
           </h1>
           <a
-            href="#"
+            href="/about"
             className="block bg-background hover:bg-pink hover:text-background py-3 px-4 rounded-lg text-lg text-gray-800 font-bold uppercase mt-10 text-pink"
           >
             Discover
