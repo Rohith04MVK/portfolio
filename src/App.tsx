@@ -13,7 +13,7 @@ const App = () => {
     <>
       <Navbar />
 
-      <BrowserRouter basename="https://rohith04mvk.github.io/portfolio/">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
