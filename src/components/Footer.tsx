@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="flex justify-center gap-6">
             <a
               className="text-blue-500 hover:text-blue-500/75"
-              href="/"
+              href="https://twitter.com/007rohitj"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
@@ -23,7 +23,7 @@ const Footer = () => {
 
             <a
               className="text-gray-900 hover:text-gray-900/75"
-              href="/"
+              href="https://github.com/Rohith04MVK"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -44,7 +44,7 @@ const Footer = () => {
 
             <a
               className="text-pink-600 hover:text-pink-600/75"
-              href="/kaggle"
+              href="https://www.kaggle.com/o07rohitjj"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Kaggle"

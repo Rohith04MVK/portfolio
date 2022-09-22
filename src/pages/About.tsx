@@ -22,12 +22,12 @@ const About = () => {
             pandemic. The people I met on the way, the friendships made, lessons
             learned all this was a great adventure! 💙
           </p>
-          <button
+          <a
             className="border-background py-3 px-4 text-lg text-white font-bold uppercase mt-10"
-            onClick={() => console.log('Do something.')}
+            href="https://cdn.discordapp.com/attachments/737334046069358612/1009073772541784064/Rohith_K_Bobby_Resume_16-08-2022-17-46-05.pdf"
           >
             Résumé
-          </button>
+          </a>
           <a
             href="/projects"
             className="block bg-background hover:bg-pink hover:text-background py-3 px-4 rounded-lg text-lg text-gray-800 font-bold uppercase mt-10 text-pink"
