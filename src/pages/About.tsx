@@ -28,6 +28,12 @@ const About = () => {
           >
             Résumé
           </button>
+          <a
+            href="/projects"
+            className="block bg-background hover:bg-pink hover:text-background py-3 px-4 rounded-lg text-lg text-gray-800 font-bold uppercase mt-10 text-pink"
+          >
+            Projects
+          </a>
         </div>
       </div>
     </div>
