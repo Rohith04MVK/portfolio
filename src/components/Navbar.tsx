@@ -11,7 +11,7 @@ const Navbar = () => {
             <a href="/">
               <img
                 className="rounded-full h-8 w-8 object-cover relative"
-                src="https://cdn.discordapp.com/attachments/870253294902210560/1011213686217642014/DALLE_2022-08-16_16.57.33_-_Image_of_a_proud_giraffe_wearing_a_tuxedo_with_a_blue_sky_in_the_background.png"
+                src="https://cdn.discordapp.com/attachments/796370670547632178/1029764827092091012/DALLE_2022-10-12_20.05.35_-_digital_art_of_a_cute_kittty_wearing_a_witch_hat_on_a_cold_night_sitting_inside_a_balck_pot.png"
               />
             </a>
             <div className="md:hidden">
