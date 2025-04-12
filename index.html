@@ -2,20 +2,255 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/src/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta content="My portfolio" property="og:title" />
-  <meta content="A small website about me by me!" property="og:description" />
-  <meta content="https://rohiths-portfolio.vercel.app/" property="og:url" />
-  <meta content="https://cdn.discordapp.com/attachments/870253294902210560/1022340908714295416/android-chrome-512x512.png" property="og:image" />
-  <meta content="#ffdede" data-react-helmet="true" name="theme-color" />
-  <title>Rohith</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohith K Bobby - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+    <!-- Custom Cursor Elements REMOVED -->
+
+    <!-- Minimal Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#toolkit">Toolkit</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Particle Background Container -->
+    <div id="particles-js"></div>
+
+    <main class="content-wrapper">
+
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content animate-on-scroll fade-in">
+                <h1 class="hero-name">Rohith K Bobby</h1>
+                <p class="hero-location">India</p>
+                <p class="hero-tagline">Machine learning & backend developer, bug magnet, and occasional genius.</p>
+                <!-- Added Social Links -->
+                <div class="hero-socials">
+                    <a href="https://github.com/Rohith04MVK" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:rohithkbobby04@gmail.com" aria-label="Send Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!-- Add LinkedIn if you have one -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#approach" class="scroll-down-indicator" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- 2. Approach Section -->
+        <section id="approach" class="standard-section">
+            <h2 class="section-title animate-on-scroll fade-in-up">My Philosophy</h2>
+            <p class="philosophy-text animate-on-scroll fade-in-up delay-1">
+                Work should make sense—to me, to the machine, and to the person using it. Most good work starts by
+                asking the right questions, not pretending to have all the answers. It's about finding those happy
+                little solutions that stand strong, even when the world gets a little messy.
+            </p>
+        </section>
+
+        <!-- 3. Toolkit Section -->
+        <section id="toolkit" class="standard-section">
+            <h2 class="section-title animate-on-scroll fade-in-up">Core Toolkit</h2>
+            <div class="skills-icon-grid animate-on-scroll fade-in-up delay-1">
+                <div class="skill-item"><i class="devicon-python-plain skill-icon"></i><span
+                        class="skill-name">Python</span></div>
+                <div class="skill-item"><i class="fas fa-brain skill-icon"></i><span class="skill-name">PyTorch /
+                        TensorFlow</span></div>
+                <div class="skill-item"><i class="fas fa-comments skill-icon"></i><span class="skill-name">NLP</span>
+                </div>
+                <div class="skill-item"><i class="fas fa-eye skill-icon"></i><span class="skill-name">Computer
+                        Vision</span></div>
+                <div class="skill-item"><i class="devicon-go-original-wordmark skill-icon"></i><span
+                        class="skill-name">Go / Rust</span></div>
+                <div class="skill-item"><i class="devicon-docker-plain skill-icon"></i><span
+                        class="skill-name">Docker</span></div>
+                <div class="skill-item"><i class="devicon-git-plain skill-icon"></i><span class="skill-name">Git</span>
+                </div>
+                <div class="skill-item"><i class="fab fa-linux skill-icon"></i><span class="skill-name">Linux</span>
+                </div>
+                <div class="skill-item"><i class="fas fa-server skill-icon"></i><span class="skill-name">Web
+                        Frameworks (FastAPI/Django)</span></div>
+                <div class="skill-item"><i class="fas fa-sitemap skill-icon"></i><span class="skill-name">System Design
+                        / Algorithms</span></div>
+            </div>
+        </section>
+
+        <!-- 4. Experience Section -->
+        <section id="experience" class="standard-section">
+            <h2 class="section-title animate-on-scroll fade-in-up">Experience & Education</h2>
+            <div class="experience-list">
+                <div class="experience-entry animate-on-scroll fade-in-up">
+                    <div class="experience-header">
+                        <h3>Machine Learning Intern</h3><span class="experience-date">03/2023 – 12/2023</span>
+                    </div>
+                    <h4 class="experience-company">IHRD/SBCID Kerala</h4>
+                    <ul>
+                        <li>Automated newspaper analysis (OCR, Summarization), slashing processing time by 75%.</li>
+                        <li>Enhanced case identification accuracy by 20% through NLP-driven keyword extraction.</li>
+                        <li>Engineered an AI translation pipeline boosting Indic language accuracy by 25% (BLEU),
+                            empowering multilingual communication for >20 officials.</li>
+                    </ul>
+                </div>
+                <div class="experience-entry animate-on-scroll fade-in-up delay-1">
+                    <div class="experience-header">
+                        <h3>Research Intern</h3><span class="experience-date">03/2022 – 03/2023</span>
+                    </div>
+                    <h4 class="experience-company">Aris4D</h4>
+                    <ul>
+                        <li>Pioneered a deep learning model for petri dish analysis, achieving 95% accuracy in
+                            predicting antibiotic effectiveness.</li>
+                        <li>Reduced antibiotic selection time by 30% in pilot studies.</li>
+                        <li>Cut model training time by 12% using computer vision for feature extraction.</li>
+                    </ul>
+                </div>
+                <div class="experience-entry animate-on-scroll fade-in-up delay-2">
+                    <div class="experience-header">
+                        <h3>Bachelor of Technology, Computer Science</h3><span class="experience-date">11/2022 –
+                            Present</span>
+                    </div>
+                    <h4 class="experience-company">College of Engineering Kallooppara</h4>
+                    <p class="experience-description">Building theoretical and practical foundations in computer science
+                        and engineering.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Projects Section -->
+        <section id="projects" class="standard-section">
+            <h2 class="section-title animate-on-scroll fade-in-up">Projects</h2>
+            <div class="project-showcase animate-on-scroll fade-in-up">
+                <div class="project-details">
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="Brain Tumor Project Link">Brain Tumor Segmentation & Classification <i
+                                class="fas fa-external-link-alt link-icon"></i></a></h3>
+                    <ul>
+                        <li>Leveraged ResU-Net architecture to achieve ~90% segmentation & classification accuracy,
+                            surpassing conventional CNNs by 15%.</li>
+                        <li>Significantly reduced false positives (10%), enhancing potential diagnostic precision.</li>
+                    </ul>
+                    <div class="project-tags"><span>Computer Vision</span><span>Deep
+                            Learning</span><span>PyTorch</span><span>Medical AI</span></div>
+                </div>
+                <div class="project-visual"><img
+                        src="https://raw.githubusercontent.com/Rohith04MVK/Brain-Tumor-Segmentation-And-Classification/refs/heads/main/images/brain_and_tumor.png"
+                        alt="Abstract representation of brain tumor segmentation"></div>
+            </div>
+            <div class="project-showcase reverse animate-on-scroll fade-in-up">
+                <div class="project-details">
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="Image Search Project Link">Image Search with Words <i
+                                class="fas fa-external-link-alt link-icon"></i></a></h3>
+                    <ul>
+                        <li>Developed a natural language interface for intuitive image library search.</li>
+                        <li>Optimized embedding and search algorithms for near-instantaneous results.</li>
+                    </ul>
+                    <div class="project-tags"><span>NLP</span><span>Computer
+                            Vision</span><span>Search</span><span>Python</span></div>
+                </div>
+                <div class="project-visual"><img
+                        src="https://via.placeholder.com/500x300/C471ED/050505?text=Image+Search+Vis"
+                        alt="Abstract representation of image search"></div>
+            </div>
+            <div class="project-showcase animate-on-scroll fade-in-up">
+                <div class="project-details">
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer"
+                            aria-label="Diffusion MNIST Project Link">Diffusion MNIST <i
+                                class="fas fa-external-link-alt link-icon"></i></a></h3>
+                    <ul>
+                        <li>Implemented a Denoising Diffusion Probabilistic Model (DDPM) from foundational principles.
+                        </li>
+                        <li>Successfully generated coherent MNIST digits purely from random noise, exploring controlled
+                            generative AI.</li>
+                    </ul>
+                    <div class="project-tags"><span>Generative AI</span><span>Diffusion
+                            Models</span><span>PyTorch</span><span>CV</span></div>
+                </div>
+                <div class="project-visual"><img
+                        src="https://github.com/Rohith04MVK/mnist-diffusion/blob/main/assets/result.png?raw=true"
+                        alt="Abstract representation of noise to digit generation"></div>
+            </div>
+            <div class="project-showcase reverse animate-on-scroll fade-in-up">
+                <div class="project-details">
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer" aria-label="goKyber Project Link">goKyber
+                            <i class="fas fa-external-link-alt link-icon"></i></a></h3>
+                    <p class="project-description">A High-Performance and Practical Post-Quantum Encryption Framework
+                        implemented in Go.</p>
+                    <div class="project-tags">
+                        <span>Go</span><span>Cryptography</span><span>Post-Quantum</span><span>Kyber</span><span>Security</span>
+                    </div>
+                </div>
+                <div class="project-visual"><img
+                        src="https://raw.githubusercontent.com/Rohith04MVK/goKyber/refs/heads/main/docs/assests/images/logo.jpeg"
+                        alt="Abstract representation of goKyber"></div>
+            </div>
+            <div class="project-showcase animate-on-scroll fade-in-up">
+                <div class="project-details">
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Malang Project Link">Malang <i
+                                class="fas fa-external-link-alt link-icon"></i></a></h3>
+                    <p class="project-description">Malang is... well, let's just say it's a unique programming language.
+                        Born out of sheer defiance and an unwavering commitment to proving a point, Malang is my way of
+                        showing that I did pay attention in my compiler design course—whether my professor appreciates
+                        the outcome or not.</p>
+                    <div class="project-tags"><span>Compiler Design</span><span>Programming
+                            Language</span><span>Rust</span><span>Humor?</span></div>
+                </div>
+                <div class="project-visual"><img src="https://raw.githubusercontent.com/Rohith04MVK/malang/main/media/logo.png"
+                        alt="Abstract representation of Malang Language"></div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section -->
+        <section id="contact" class="standard-section connect-section">
+            <h2 class="section-title animate-on-scroll fade-in-up">Get In Touch</h2>
+            <p class="animate-on-scroll fade-in-up delay-1">
+                Open to interesting projects and collaborations. Feel free to reach out.
+            </p>
+            <div class="contact-links animate-on-scroll fade-in-up delay-2">
+                <a href="mailto:rohithkbobby04@gmail.com">
+                    <i class="fas fa-envelope"></i> rohithkbobby04@gmail.com
+                </a>
+                <a href="https://github.com/Rohith04MVK" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> Rohith04MVK
+                </a>
+                <a href="tel:+918590642088">
+                    <i class="fas fa-phone"></i> +91 8590642088
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Rohith K Bobby // Crafted with Code & Curiosity</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
