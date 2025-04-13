@@ -32,4 +32,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { threshold: 0.1 });
     animatedElements.forEach(el => { observer.observe(el); });
 
+    // --- Back to Top Button Functionality ---
+    const backToTopButton = document.getElementById("back-to-top-btn");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // For smooth scrolling
+        });
+    });
+
 }); // End DOMContentLoaded
