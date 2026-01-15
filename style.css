@@ -3,18 +3,17 @@
     --bg-color: #050505;
     --text-color: #EAEAEA;
     --text-secondary: #a0a0a0;
-    --accent-primary: #8e2de2;
-    /* Purple */
-    --accent-secondary: #f64f59;
-    /* Pink */
-    --accent-gradient: linear-gradient(90deg, var(--accent-primary), #c471ed, var(--accent-secondary));
+    --accent-primary: #1DB584;
+    /* Teal */
+    --accent-secondary: #00D9A3;
+    /* Emerald */
+    --accent-gradient: linear-gradient(90deg, var(--accent-primary), #16C995, var(--accent-secondary));
     --card-bg: #0F0F0F;
     --border-color: #222222;
     --navbar-bg: rgba(15, 15, 15, 0.85);
-    /* Slightly less transparent */
     --font-primary: 'Inter', sans-serif;
-    --glow-color: rgba(142, 45, 226, 0.3);
-    --glow-color-secondary: rgba(246, 79, 89, 0.25);
+    --glow-color: rgba(29, 181, 132, 0.3);
+    --glow-color-secondary: rgba(0, 217, 163, 0.25);
     --grid-color: rgba(255, 255, 255, 0.08);
     --grid-size: 45px;
 }
@@ -99,16 +98,7 @@ body::before {
 }
 
 .navbar a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    /* Adjust position */
-    left: 0;
-    /* Start from left */
-    background-color: var(--accent-primary);
-    transition: width 0.3s ease-out;
+    display: none;
 }
 
 .navbar a:hover {
@@ -116,7 +106,7 @@ body::before {
 }
 
 .navbar a:hover::after {
-    width: 100%;
+    display: none;
 }
 
 /* Full underline on hover */
@@ -188,29 +178,22 @@ body::before {
 
 .hero-name {
     font-size: clamp(3rem, 10vw, 6rem);
-    /* Increased size slightly */
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 0.5rem;
-    /* Adjusted spacing */
     line-height: 1.1;
     letter-spacing: -1px;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 12px var(--glow-color), 0 0 18px var(--glow-color-secondary);
-    /* Slightly enhanced glow */
-    transition: text-shadow 0.4s ease;
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
 }
 
 .hero-name:hover {
-    text-shadow: 0 0 25px var(--glow-color), 0 0 40px var(--glow-color);
+    animation: nameHoverBounce 0.6s ease-out;
 }
 
 .hero-location {
     font-size: clamp(1.1rem, 3vw, 1.4rem);
     /* Slightly larger */
-    color: var(--text-secondary);
+    color: var(--text-color);
     margin-bottom: 1.2rem;
     /* Adjusted spacing */
     font-weight: 400;
@@ -222,7 +205,7 @@ body::before {
     font-size: clamp(1.05rem, 2.8vw, 1.2rem);
     /* Slightly larger */
     /* max-width: 550px; REMOVED */
-    color: var(--text-secondary);
+    color: var(--text-color);
     font-weight: 300;
     line-height: 1.6;
     /* Increased line height */
@@ -268,7 +251,7 @@ body::before {
     border-color: var(--accent-primary);
     color: var(--accent-primary);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(142, 45, 226, 0.1);
+    box-shadow: 0 8px 25px rgba(29, 181, 132, 0.1);
 }
 
 .hero-socials {
@@ -318,14 +301,12 @@ body::before {
     transition: transform 0.3s ease;
 }
 
-.skill-item:hover {
-    transform: translateY(-5px);
-}
 
 .skill-icon {
     font-size: 3.5rem;
     margin-bottom: 15px;
-    color: var(--accent-primary); /* Changed to accent-primary for all icons */
+    color: var(--accent-primary);
+    /* Changed to accent-primary for all icons */
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -383,7 +364,7 @@ body::before {
 .experience-entry:hover {
     border-color: var(--accent-primary);
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(142, 45, 226, 0.07);
+    box-shadow: 0 6px 15px rgba(29, 181, 132, 0.07);
 }
 
 .experience-header {
@@ -531,21 +512,21 @@ body::before {
 }
 
 .project-tags span {
-    background-color: rgba(142, 45, 226, 0.1);
+    background-color: rgba(29, 181, 132, 0.1);
     color: var(--accent-primary);
     padding: 5px 12px;
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 600;
-    border: 1px solid rgba(142, 45, 226, 0.2);
+    border: 1px solid rgba(29, 181, 132, 0.2);
     transition: all 0.3s ease;
 }
 
 .project-tags span:hover {
-    background-color: rgba(142, 45, 226, 0.2);
+    background-color: rgba(29, 181, 132, 0.2);
     color: var(--text-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(142, 45, 226, 0.1);
+    box-shadow: 0 4px 8px rgba(29, 181, 132, 0.1);
 }
 
 .project-visual img {
@@ -585,15 +566,7 @@ body::before {
 }
 
 .contact-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--accent-gradient);
-    transition: width 0.3s ease-out;
+    display: none;
 }
 
 .contact-links a:hover {
@@ -601,7 +574,7 @@ body::before {
 }
 
 .contact-links a:hover::after {
-    width: 80%;
+    display: none;
 }
 
 .contact-links i {
