@@ -319,6 +319,13 @@ body::before {
     }
 }
 
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .scroll-down-indicator {
+        animation: none;
+    }
+}
+
 /* --- Approach Section --- */
 .philosophy-text {
     max-width: 700px;
