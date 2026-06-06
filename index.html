@@ -14,8 +14,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- DevIcons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <meta property="og:title" content="Portfolio" />
-    <meta property="og:description" content="A website about me. by me." />
+    <meta property="og:title" content="Rohith K Bobby - Portfolio" />
+    <meta property="og:description"
+        content="ML and MLOps engineer building production voice AI, backend services, GPU-backed inference, and Kubernetes deployments." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rohith-v2.vercel.app/" />
     <meta property="og:image" content="https://github.com/Rohith04MVK/portfolio/blob/main/assets/cover.png?raw=true" />
@@ -44,8 +45,8 @@
         <section id="hero" class="hero-section">
             <div class="hero-content animate-on-scroll fade-in">
                 <h1 class="hero-name">Rohith K Bobby</h1>
-                <p class="hero-location">Kerala, India</p>
-                <p class="hero-tagline">Machine learning & backend developer, bug magnet, and occasional genius.</p>
+                <p class="hero-location">Mavelikara, Kerala, India</p>
+                <p class="hero-tagline">Machine learning & backend developer, voice AI wrangler, bug magnet, and occasional genius.</p>
 
                 <!-- Action Buttons -->
                 <div class="hero-buttons">
@@ -53,7 +54,7 @@
                         class="hero-btn btn-primary">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="./assets/Rohith-K-Bobby-3.pdf" class="hero-btn btn-secondary">
+                    <a href="./assets/Resume.pdf" target="_blank" rel="noopener noreferrer" class="hero-btn btn-secondary">
                         <i class="fas fa-file-pdf"></i> CV
                     </a>
                 </div>
@@ -63,8 +64,8 @@
                     <a href="mailto:rohithkbobby04@gmail.com" aria-label="Send Email">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <!-- Add LinkedIn if you have one -->
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <a href="https://www.linkedin.com/in/rohith-bobby/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn Profile">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
@@ -78,8 +79,9 @@
         <section id="approach" class="standard-section">
             <h2 class="section-title animate-on-scroll fade-in-up">About Me</h2>
             <p class="philosophy-text animate-on-scroll fade-in-up delay-1">
-                I'm a machine learning engineer who builds end to end ML systems, from data and models to training and
-                deployment. I focus on correctness, performance, and clean implementations that ship and last.
+                I build end-to-end ML systems that move from model experiments into reliable production services. My
+                current work focuses on low-latency voice AI pipelines, self-hosted ASR and TTS, Ray Serve, Kubernetes,
+                and GPU-backed inference that can handle real traffic.
             </p>
         </section>
 
@@ -105,37 +107,37 @@
 
                 <div class="skill-item">
                     <i class="fas fa-brain skill-icon"></i>
-                    <span class="skill-name">PyTorch, TensorFlow, Transformers</span>
+                    <span class="skill-name">PyTorch & Transformers</span>
                 </div>
 
                 <div class="skill-item">
-                    <i class="fas fa-eye skill-icon"></i>
-                    <span class="skill-name">Computer Vision</span>
+                    <i class="fas fa-microphone-lines skill-icon"></i>
+                    <span class="skill-name">Voice AI</span>
                 </div>
 
                 <div class="skill-item">
-                    <i class="fas fa-comments skill-icon"></i>
-                    <span class="skill-name">NLP</span>
+                    <i class="fas fa-bolt skill-icon"></i>
+                    <span class="skill-name">CUDA & ONNX</span>
                 </div>
 
                 <div class="skill-item">
                     <i class="fas fa-server skill-icon"></i>
-                    <span class="skill-name">FastAPI, Django</span>
+                    <span class="skill-name">FastAPI & REST APIs</span>
+                </div>
+
+                <div class="skill-item">
+                    <i class="devicon-kubernetes-plain skill-icon"></i>
+                    <span class="skill-name">Kubernetes & KubeRay</span>
                 </div>
 
                 <div class="skill-item">
                     <i class="devicon-docker-plain skill-icon"></i>
-                    <span class="skill-name">Docker</span>
-                </div>
-
-                <div class="skill-item">
-                    <i class="devicon-git-plain skill-icon"></i>
-                    <span class="skill-name">Git</span>
+                    <span class="skill-name">Docker & CI/CD</span>
                 </div>
 
                 <div class="skill-item">
                     <i class="fab fa-linux skill-icon"></i>
-                    <span class="skill-name">Linux</span>
+                    <span class="skill-name">Linux & GPU Infra</span>
                 </div>
             </div>
         </section>
@@ -147,6 +149,25 @@
 
             <div class="experience-list">
                 <div class="experience-entry animate-on-scroll fade-in-up">
+                    <div class="experience-header">
+                        <h3>ML & MLOps Engineer</h3>
+                        <span class="experience-date">12/2025 – Present</span>
+                    </div>
+                    <h4 class="experience-company">GenerativeStudio.dev · Remote</h4>
+                    <ul>
+                        <li>Built low-latency voice AI pipelines with LiveKit, self-hosted ASR, LLM, and TTS services
+                            for production call handling.</li>
+                        <li>Served Parakeet ASR and Kokoro TTS on bare-metal L40S infrastructure with Kubernetes,
+                            KubeRay, Ray Serve, and Docker.</li>
+                        <li>Validated inference services through concurrency sweeps, reaching 155 RPS for ASR, 56 RPS
+                            for TTS, 630x real-time audio throughput, p50 latency below 200ms, and full transcription
+                            match across 2,400 test requests.</li>
+                        <li>Reduced cold-start latency and timeout failures in async Ray Serve deployments by tuning
+                            worker concurrency, batching, and deployment settings.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-entry animate-on-scroll fade-in-up delay-1">
                     <div class="experience-header">
                         <h3>Machine Learning Intern</h3>
                         <span class="experience-date">03/2023 – 12/2023</span>
@@ -162,29 +183,16 @@
                     </ul>
                 </div>
 
-                <div class="experience-entry animate-on-scroll fade-in-up delay-1">
-                    <div class="experience-header">
-                        <h3>Research Intern</h3>
-                        <span class="experience-date">03/2022 – 03/2023</span>
-                    </div>
-                    <h4 class="experience-company">Aris4D</h4>
-                    <ul>
-                        <li>Built a deep learning model to analyze petri dish images and predict antibiotic
-                            effectiveness with 95% accuracy.</li>
-                        <li>Reduced antibiotic selection time by 30% in pilot studies using the deployed model.</li>
-                        <li>Applied computer vision techniques for colony segmentation and feature extraction, reducing
-                            training time by 12%.</li>
-                    </ul>
-                </div>
-
                 <div class="experience-entry animate-on-scroll fade-in-up delay-2">
                     <div class="experience-header">
-                        <h3>Bachelor of Technology in Computer Science</h3>
-                        <span class="experience-date">11/2022 – Present</span>
+                        <h3>B.Tech in Computer Science, Cyber Security</h3>
+                        <span class="experience-date">11/2022 – 04/2026</span>
                     </div>
                     <h4 class="experience-company">College of Engineering Kallooppara</h4>
                     <p class="experience-description">
-                        Coursework and projects focused on machine learning, systems, and core computer science.
+                        Completed B.Tech in Computer Science with a Cyber Security focus. Dissertation covered fast fully
+                        homomorphic encryption via Module-LWE with parallel NTT algorithms, GPU Roofline modeling, and
+                        IND-CPA security analysis.
                     </p>
                 </div>
             </div>
@@ -197,119 +205,69 @@
 
             <div class="project-showcase reverse animate-on-scroll fade-in-up">
                 <div class="project-details">
+                    <h3>TinyServe</h3>
+                    <ul>
+                        <li>Building a minimal local LLM inference server for developers who need simple model serving
+                            without the overhead of larger serving stacks.</li>
+                        <li>Added OpenAI-compatible chat completions, streaming responses, request queuing, token usage
+                            logs, per-model config, GPU memory display, request cancellation, and model warmup.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>FastAPI</span>
+                        <span>PyTorch</span>
+                        <span>CUDA</span>
+                        <span>LLM Serving</span>
+                    </div>
+                </div>
+                <div class="project-visual project-visual-card">
+                    <img class="project-logo" src="./assets/tiny_logo.png" alt="TinyServe logo">
+                </div>
+            </div>
+
+            <div class="project-showcase animate-on-scroll fade-in-up">
+                <div class="project-details">
+                    <h3>Offline Voice Assistant for Field Technicians</h3>
+                    <ul>
+                        <li>Led ML architecture for a fully offline edge AI voice assistant at the Armada Hackathon,
+                            built for field technicians without internet access.</li>
+                        <li>Combined local ASR, noise suppression, Vision-RAG document retrieval, vision-language
+                            reasoning, and TTS into one offline assistant.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Parakeet RNNT</span>
+                        <span>Kokoro TTS</span>
+                        <span>ColPali</span>
+                        <span>Qwen3-VL</span>
+                    </div>
+                </div>
+                <div class="project-visual project-visual-card">
+                    <i class="fas fa-headset"></i>
+                    <span>Offline voice + vision assistant</span>
+                </div>
+            </div>
+
+            <div class="project-showcase animate-on-scroll fade-in-up">
+                <div class="project-details">
                     <h3>
                         <a href="https://github.com/Rohith04mvk/gokyber" target="_blank" rel="noopener noreferrer">
                             goKyber <i class="fas fa-external-link-alt link-icon"></i>
                         </a>
                     </h3>
                     <ul>
-                        <li>Implemented a post-quantum cryptography framework in Go implementing Kyber.</li>
-                        <li>Focused on high performance, correctness, and clear abstractions.</li>
+                        <li>Implemented the Kyber key encapsulation mechanism in Go with clean structure, practical
+                            benchmarking, and educational clarity.</li>
+                        <li>Compared lattice-based key exchange against RSA and ECC baselines to study performance
+                            tradeoffs.</li>
                     </ul>
                     <div class="project-tags">
-                        <span>Cryptography</span>
-                        <span>Systems</span>
                         <span>Go</span>
+                        <span>Post-Quantum Cryptography</span>
+                        <span>Kyber</span>
                     </div>
                 </div>
                 <div class="project-visual">
                     <img src="https://raw.githubusercontent.com/Rohith04MVK/goKyber/refs/heads/main/docs/assests/images/logo.jpeg"
                         alt="goKyber project visual">
-                </div>
-            </div>
-
-            <div class="project-showcase animate-on-scroll fade-in-up">
-                <div class="project-details">
-                    <h3>
-                        <a href="https://github.com/Rohith04MVK/malang/" target="_blank" rel="noopener noreferrer">
-                            Malang <i class="fas fa-external-link-alt link-icon"></i>
-                        </a>
-                    </h3>
-                    <ul>
-                        <li>Built a custom programming language and compiler in Go.</li>
-                        <li>Explored parsing, type checking, and code generation for educational purposes.</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span>Compilers</span>
-                        <span>Language Design</span>
-                    </div>
-                </div>
-                <div class="project-visual">
-                    <img src="https://raw.githubusercontent.com/Rohith04MVK/malang/main/media/logo.png"
-                        alt="Malang language visual">
-                </div>
-            </div>
-
-            <div class="project-showcase animate-on-scroll fade-in-up">
-                <div class="project-details">
-                    <h3>
-                        <a href="https://github.com/Rohith04MVK/Brain-Tumor-Segmentation-And-Classification/"
-                            target="_blank" rel="noopener noreferrer">
-                            Brain Tumor Segmentation & Classification
-                            <i class="fas fa-external-link-alt link-icon"></i>
-                        </a>
-                    </h3>
-                    <ul>
-                        <li>Implemented a ResU-Net based pipeline for tumor segmentation and classification.</li>
-                        <li>Achieved around 90% accuracy and reduced false positives by 10% compared to baseline CNNs.
-                        </li>
-                    </ul>
-                    <div class="project-tags">
-                        <span>Medical Imaging</span>
-                        <span>Deep Learning</span>
-                    </div>
-                </div>
-                <div class="project-visual">
-                    <img src="https://raw.githubusercontent.com/Rohith04MVK/Brain-Tumor-Segmentation-And-Classification/refs/heads/main/images/brain_and_tumor.png"
-                        alt="Brain tumor segmentation visual">
-                </div>
-            </div>
-
-            <div class="project-showcase reverse animate-on-scroll fade-in-up">
-                <div class="project-details">
-                    <h3>
-                        <a href="https://github.com/Rohith04MVK/llm-orchestrator" target="_blank"
-                            rel="noopener noreferrer">
-                            LLM Orchestrator <i class="fas fa-external-link-alt link-icon"></i>
-                        </a>
-                    </h3>
-                    <ul>
-                        <li>Orchestrates a series of Docker containers, each running a microservice powered by Large
-                            Language Models (LLMs).</li>
-                        <li>Determines the optimal sequence of services needed to fulfill user-defined tasks
-                            automatically.</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span>LLM Agents</span>
-                        <span>Docker</span>
-                        <span>Microservices</span>
-                    </div>
-                </div>
-                <div class="project-visual">
-                    <img src="./assets/llm-orchestrator.png" alt="LLM Orchestrator visual">
-                </div>
-            </div>
-
-            <div class="project-showcase animate-on-scroll fade-in-up">
-                <div class="project-details">
-                    <h3>
-                        <a href="https://github.com/Rohith04MVK/mnist-diffusion/" target="_blank"
-                            rel="noopener noreferrer">
-                            Diffusion MNIST <i class="fas fa-external-link-alt link-icon"></i>
-                        </a>
-                    </h3>
-                    <ul>
-                        <li>Implemented a DDPM from scratch to understand diffusion based generative models.</li>
-                        <li>Generated MNIST digits from pure noise through iterative denoising.</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span>Generative Models</span>
-                        <span>Research Builds</span>
-                    </div>
-                </div>
-                <div class="project-visual">
-                    <img src="https://github.com/Rohith04MVK/mnist-diffusion/blob/main/assets/result.png?raw=true"
-                        alt="Diffusion MNIST visual">
                 </div>
             </div>
         </section>
@@ -319,17 +277,21 @@
         <section id="contact" class="standard-section connect-section">
             <h2 class="section-title animate-on-scroll fade-in-up">Get In Touch</h2>
             <p class="animate-on-scroll fade-in-up delay-1">
-                Open to interesting projects and collaborations. Feel free to reach out.
+                Open to ML infrastructure, voice AI, backend, and applied research work. Feel free to reach out.
             </p>
             <div class="contact-links animate-on-scroll fade-in-up delay-2">
                 <a href="mailto:rohithkbobby04@gmail.com">
                     <i class="fas fa-envelope"></i> rohithkbobby04@gmail.com
                 </a>
+                <a href="tel:+918590642088">
+                    <i class="fas fa-phone"></i> +91 8590642088
+                </a>
                 <a href="https://github.com/Rohith04MVK" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i> Rohith04MVK
                 </a>
-                <a href="#">
-                    <i class="fab fa-discord"></i> rohitk.
+                <a href="https://www.linkedin.com/in/rohith-bobby/" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
             </div>
         </section>
@@ -337,7 +299,7 @@
     </main>
 
     <footer class="footer">
-        <p>© 2025 Rohith K Bobby // Just me, a keyboard, and a lot of questions</p>
+        <p>© 2026 Rohith K Bobby // Building ML systems that ship</p>
     </footer>
 
     <!-- Back to Top Button -->
